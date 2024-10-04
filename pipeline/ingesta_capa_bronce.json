@@ -1,0 +1,23 @@
+{
+	"name": "ingesta_capa_bronce",
+	"properties": {
+		"description": "Ingesta de datos desde input a la capa bronce",
+		"activities": [
+			{
+				"name": "Obtener_metadata_input",
+				"description": "Obtener metadatos de la carpeta input",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
+			}
+		],
+		"annotations": []
+	}
+}
