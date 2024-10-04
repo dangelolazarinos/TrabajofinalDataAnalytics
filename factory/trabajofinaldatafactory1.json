@@ -1,0 +1,9 @@
+{
+	"name": "trabajofinaldatafactory1",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "647eace6-a037-4869-bc09-d0b6768d2584",
+		"tenantId": "e8081b24-1ae6-42a9-a09c-f10a0092c4d9"
+	}
+}
