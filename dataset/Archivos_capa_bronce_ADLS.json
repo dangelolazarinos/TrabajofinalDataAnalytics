@@ -1,0 +1,32 @@
+{
+	"name": "Archivos_capa_bronce_ADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "conector_ADLS_Datafactory",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Archivo_capa_bronce": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().Archivo_capa_bronce",
+					"type": "Expression"
+				},
+				"folderPath": "trabajofinal/capa_bronce",
+				"fileSystem": "dlazarinos"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
